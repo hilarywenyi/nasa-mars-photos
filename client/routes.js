@@ -17,7 +17,7 @@ class Routes extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path ="/mars" component = {Mars} />
+        <Route exact path ="/" component = {Mars} />
         <Route exact path ="/date" component = {MarsByDate} />
       </Switch>
     )

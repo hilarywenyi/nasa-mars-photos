@@ -1,3 +1,26 @@
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.white-btn-shadow {
+  box-shadow: 0px 1px 10px 0px #b0b4ec;
+  color: darkgray;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  transition: .4s ease;
+  font-size: 18px;
+  background: white;
+  text-align: center;
+  justify-content: center;
+  margin: auto; }
+  .white-btn-shadow:hover {
+    background-color: darkgray;
+    color: white; }
+  .white-btn-shadow a {
+    color: black; }
+
 .flatpickr-calendar {
   background: transparent;
   opacity: 0;
@@ -698,6 +721,28 @@ span.flatpickr-day {
 .hasWeeks .flatpickr-days {
   border-right: 0; }
 
+.mars-container {
+  flex-direction: column;
+  text-align: center; }
+
+.mars-by-date-photo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.mars-by-date-container {
+  flex-direction: column;
+  text-align: center; }
+
+.mars-photo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
 body {
   font-family: sans-serif; }
   body a {
@@ -710,5 +755,9 @@ body {
   body form div {
     margin: 1em;
     display: inline-block; }
+  body img {
+    width: 20%;
+    padding: 15px;
+    border-radius: 25px; }
 
 /*# sourceMappingURL=style.css.map*/

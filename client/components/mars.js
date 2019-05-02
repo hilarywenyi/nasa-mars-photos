@@ -1,14 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {fetchMars} from '../store';
-//import MarsByDate from './marsByDate';
 
 class Mars extends React.Component {
 
   componentDidMount(){
     this.props.fetchMars();
   }
-
 
   render(){
     const {mars} = this.props;
@@ -18,17 +16,17 @@ class Mars extends React.Component {
     }
 
     return(
-      <div>
+      <div className = 'mars-container'>
         <h2>Welcome to Mars</h2>
-        {/* <MarsByDate /> */}
+        <h2>Total {mars.photos.length} Photos</h2>
+        <div className='mars-photo-container'>
         {
           mars.photos.map(item => (
-            <div key = {item.id}>
-            <img src = {item.img_src} alt='image'/>
-            </div>
+            <img key = {item.id} src = {item.img_src} alt='image'/>
           )
           )
         }
+       </div>
       </div>
     )
   }

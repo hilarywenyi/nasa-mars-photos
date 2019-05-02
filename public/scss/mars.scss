@@ -1,0 +1,12 @@
+.mars-container{
+  flex-direction: column;
+  text-align: center;
+}
+
+.mars-by-date-photo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,10 +1,7 @@
-// import any scss files you create (in the public/scss folder) here so your application can use them!
-
-// Learn SASS Documentation: https://sass-lang.com/guide
-// SASS Reference: https://sass-lang.com/documentation/file.SASS_REFERENCE.html
-
-// See an example import below
+@import 'navbar';
 @import 'flatpickr';
+@import 'mars';
+@import 'marsByDate';
 
 body {
   font-family: sans-serif;
@@ -26,4 +23,13 @@ body {
     margin: 1em;
     display: inline-block;
   }
+
+  img{
+    width: 20%;
+    padding: 15px;
+    border-radius: 25px;
+  }
 }
+
+
+

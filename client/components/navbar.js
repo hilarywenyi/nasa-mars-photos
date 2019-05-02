@@ -1,15 +1,13 @@
 import React from 'react'
-//import PropTypes from 'prop-types'
-//import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-//import {logout} from '../store'
+
 
 const Navbar = () => (
-  <div>
-    <h1>Mars Photos</h1>
+  <div className='navbar-container'>
+    <h1>NASA Mars Rover Photos</h1>
     <nav>
-        <div>
-           <Link to="/mars">Mars</Link>
+        <div className='white-btn-shadow'>
+           <Link to="/date">Search Mars Photo By Date</Link>
         </div>
     </nav>
     <hr />
@@ -17,29 +15,3 @@ const Navbar = () => (
 )
 
 export default Navbar
-/**
- * CONTAINER
- */
-// const mapState = state => {
-//   return {
-//     isLoggedIn: !!state.user.id
-//   }
-// }
-
-// const mapDispatch = dispatch => {
-//   return {
-//     handleClick() {
-//       dispatch(logout())
-//     }
-//   }
-// }
-
-// export default connect(mapState, mapDispatch)(Navbar)
-
-/**
- * PROP TYPES
- */
-// Navbar.propTypes = {
-//   handleClick: PropTypes.func.isRequired,
-//   isLoggedIn: PropTypes.bool.isRequired
-// }
