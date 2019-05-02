@@ -6,7 +6,7 @@ class MarsByDate extends React.Component {
   constructor(){
     super();
     this.state = {
-      date: new Date(2015, 2, 30),
+      date: new Date(2019, 4, 30),
       mars: {},
     }
     this.handleChange= this.handleChange.bind(this)
@@ -30,8 +30,8 @@ class MarsByDate extends React.Component {
   async fetchDate(date){
     let selectedDate = new Date(date).toISOString().split('T')[0]
 
-    // const API_KEY= 'MCvXjE2UpVjaYEsuCjFZX6RWsNUayOXqEdb43kvH'
-    const API_KEY='1lasQWTl31wLvke0ZO6G0RfebtUaQYXl1kB7B4AA'
+    const API_KEY= 'MCvXjE2UpVjaYEsuCjFZX6RWsNUayOXqEdb43kvH'
+    //const API_KEY='1lasQWTl31wLvke0ZO6G0RfebtUaQYXl1kB7B4AA'
     const END_POINT = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/'
     let destination= `${END_POINT}photos?earth_date=${selectedDate}&api_key=${API_KEY}`
 
@@ -62,7 +62,8 @@ class MarsByDate extends React.Component {
         <Flatpickr
           value={date}
           options={{
-            maxDate: '2015-5-30',
+            maxDate: 'today',
+            minDate: '2012-10-30',
             allowInput: true,
             dateFormat: "Y-m-d",
           }}
