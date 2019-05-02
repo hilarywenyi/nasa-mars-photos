@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
 //import PropTypes from 'prop-types'
-import {Mars} from './components'
+import {Mars, MarsByDate} from './components'
 // import {Login, Signup, UserHome, Mars} from './components'
 import {me} from './store'
 
@@ -17,7 +17,8 @@ class Routes extends Component {
   render() {
     return (
       <Switch>
-        <Route path ="/mars" component = {Mars} />
+        <Route exact path ="/mars" component = {Mars} />
+        <Route exact path ="/date" component = {MarsByDate} />
       </Switch>
     )
   }

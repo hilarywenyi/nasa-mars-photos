@@ -33,9 +33,20 @@ module.exports = {
           use: "css-loader!sass-loader",
         })
       }
+      // {
+      //   test: /\.css/,
+      //   loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      // }
+      // {
+      //   test: /\.css$/,
+      //   include: /node_modules/,
+      //   loaders: ['style-loader', 'css-loader'],
+      // }
     ]
   },
+  node: { Buffer: false },
   plugins: [
     new ExtractTextPlugin('./public/style.css')
+    //new ExtractTextPlugin("./public/style.css", { allChunks: true }),
   ]
 }
